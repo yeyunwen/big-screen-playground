@@ -1,0 +1,24 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# 表示是最顶层的配置文件
+root = true
+
+# 匹配全部文件
+[*]
+# 设置字符集
+charset = utf-8
+# 缩进风格
+indent_style = space
+# 缩进大小
+indent_size = 2
+# 换行符类型
+end_of_line = lf
+# 在文件末尾插入新行
+insert_final_newline = true
+# 删除一行中的前后空格
+trim_trailing_whitespace = true
+
+# 匹配md结尾的文件
+[*.md]
+insert_final_newline = false
+trim_trailing_whitespace = false 
