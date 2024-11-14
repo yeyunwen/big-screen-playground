@@ -9,6 +9,10 @@ const routes = [
     path: "/teleport",
     component: () => import("@/views/teleport/index.vue"),
   },
+  {
+    path: "/option",
+    component: () => import("@/views/option/index.vue"),
+  },
 ];
 
 const router = createRouter({

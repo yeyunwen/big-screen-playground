@@ -8,6 +8,7 @@ import {
   DatasetComponent,
   // 内置数据转换器组件 (filter, sort)
   TransformComponent,
+  LegendComponent,
 } from "echarts/components";
 import { LabelLayout, UniversalTransition } from "echarts/features";
 import { CanvasRenderer } from "echarts/renderers";
@@ -22,6 +23,7 @@ import type {
   TooltipComponentOption,
   GridComponentOption,
   DatasetComponentOption,
+  LegendComponentOption,
 } from "echarts/components";
 import type { ComposeOption } from "echarts/core";
 
@@ -33,6 +35,7 @@ export type ECOption = ComposeOption<
   | TooltipComponentOption
   | GridComponentOption
   | DatasetComponentOption
+  | LegendComponentOption
 >;
 
 // 注册必须的组件
@@ -44,6 +47,7 @@ echarts.use([
   TransformComponent,
   BarChart,
   LineChart,
+  LegendComponent,
   LabelLayout,
   UniversalTransition,
   CanvasRenderer,
