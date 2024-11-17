@@ -13,6 +13,10 @@ const routes = [
     path: "/option",
     component: () => import("@/views/option/index.vue"),
   },
+  {
+    path: "/use",
+    component: () => import("@/views/use/index.vue"),
+  },
 ];
 
 const router = createRouter({

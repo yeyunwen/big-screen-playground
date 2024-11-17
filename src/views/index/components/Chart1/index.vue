@@ -8,10 +8,6 @@ defineOptions({
   name: "Chart1",
 });
 
-const emits = defineEmits(["showBig"]);
-
-const chartRef = useTemplateRef<HTMLElement>("chart");
-
 const getOption = (data: { xList: string[]; yList: number[] }): ECOption => {
   const exctrOption: ECOption = {
     xAxis: {
@@ -40,6 +36,10 @@ const render = (dom: HTMLElement) => {
     },
   };
 };
+
+const emits = defineEmits(["showBig"]);
+
+const chartRef = useTemplateRef<HTMLElement>("chart");
 
 const clickBig = () => {
   emits("showBig", "chart1");

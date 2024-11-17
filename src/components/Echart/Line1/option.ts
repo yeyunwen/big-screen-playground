@@ -1,4 +1,4 @@
-import { ECOption } from "../../echarts";
+import { ECOption } from "@/echarts";
 
 export const baseOption: ECOption = {
   xAxis: {
